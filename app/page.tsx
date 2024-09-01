@@ -2,7 +2,7 @@
  * @Author: gaotian dc23byte@163.com
  * @Date: 2024-07-07 00:56:38
  * @LastEditors: gaotian dc23byte@163.com
- * @LastEditTime: 2024-08-29 22:50:24
+ * @LastEditTime: 2024-09-01 12:39:47
  * @FilePath: /hydra-react-admin/nextjs-dashboard/app/page.tsx
  * @Description:
  */
@@ -12,6 +12,16 @@ import Link from 'next/link'
 import styles from '@/app/ui/home.module.css'
 import { lusitana } from '@/app/ui/fonts'
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'Acme Dashboard',
+  },
+  description: 'The official Next.js Learn Dashboard built with App Router.',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+}
 
 export default function Page() {
   return (
